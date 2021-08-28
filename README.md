@@ -4,9 +4,7 @@
 
 Skeleton-based human action recognition has made great progress, especially with the development of a graph convolution network (GCN). The most important work is ST-GCN, which automatically learns both spatial and temporal patterns from skeleton sequences. However, this method still has some imperfections: only short-range correlations are appreciated, due to the limited receptive field of graph convolution. However, long-range dependence is essential for recognizing human action. In this work, we propose the use of a spatial–temporal relative transformer (ST-RT) to overcome these defects. Through introducing relay nodes, ST-RT avoids the transformer architecture, breaking the inherent skeleton topology in spatial and the order of skeleton sequence in temporal dimensions. Furthermore, we mine the dynamic information contained in motion at different scales. Finally, four ST-RTs, which extract spatial–temporal features from four kinds of skeleton sequence, are fused to form the final model, multi-stream spatial-temporal relative transformer (MSST-RT), to enhance performance. Extensive experiments evaluate the proposed methods on three benchmarks for skeleton-based action recognition: NTU RGB+D, NTU RGB+D 120 and UAV-Human. The results demonstrate that MSST-RT is on par with SOTA in terms of performance. 
 
-<div align=center>
-<img src="https://github.com/YIXIN-85/MSST-RT/blob/master/images/figure1.png" width = 50% height = 50% div align=center>
-</div>
+![image](https://github.com/YIXIN-85/MSST-RT/blob/master/images/figure1.png)
 
 Figure 1: Illustration of the overall architecture of the proposed MSST-RT. The sum of all scores from four ST-RTs is treated as the final prediction.
 
